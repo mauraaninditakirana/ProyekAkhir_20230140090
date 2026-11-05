@@ -19,3 +19,34 @@ Sebaran Event Type (nilai ekstrem tidak dibuang):
 [8] 8. Tambah fitur bulan dan hari pada tahun: 335,352 baris
 
 Tersimpan di HDFS: hdfs://localhost:9000/proyek_akhir/pm25/clean/pm25_clean.parquet
+Sampel 1000 baris: data/sample/pm25_clean_sample.csv
+
+== Ringkasan data bersih ==
+Stasiun        : 1043
+Wilayah        : 53
++----------+----------+
+| min(date)| max(date)|
++----------+----------+
+|2025-01-01|2025-12-31|
++----------+----------+
+
++-------+-----------------+
+|summary|             pm25|
++-------+-----------------+
+|  count|           335352|
+|   mean|7.287232286395085|
+| stddev|5.987353608137268|
+|    min|              0.0|
+|    max|         427.9375|
++-------+-----------------+
+
+== Ringkasan langkah ==
+0. Data mentah dari HDFS: 758,834
+1. 1. Pilih 12 kolom dari 29: 758,834
+2. 2. Buang baris dengan nilai kosong: 758,834
+3. 3. Hapus baris identik: 743,128
+4. 4. Buang Observation Percent < 75.0: 738,776
+5. 5. Buang kadar PM2.5 negatif: 735,754
+6. 6. Hapus pengukuran ganda (stasiun+alat+tanggal+nilai): 734,365
+7. 7. Ratakan per stasiun per hari: 335,352
+8. 8. Tambah fitur bulan dan hari pada tahun: 335,352

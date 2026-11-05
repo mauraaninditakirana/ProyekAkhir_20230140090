@@ -71,7 +71,12 @@ final = catat("8. Tambah fitur bulan dan hari pada tahun", final).cache()
 # Simpan ke HDFS (Parquet) dan sampel kecil untuk repo
 final.write.mode("overwrite").parquet(OUT)
 print("\nTersimpan di HDFS:", OUT)
-final.orderBy(F.rand(42)).limit(1000).toPandas().to_csv(SAMPLE, index=False)
+import csv
+rows = final.orderBy(F.rand(42)).limit(1000).collect()
+with open(SAMPLE, "w", newline="") as f:
+    w = csv.writer(f)
+    w.writerow(final.columns)
+    w.writerows([list(r) for r in rows])
 print("Sampel 1000 baris:", SAMPLE)
 
 print("\n== Ringkasan data bersih ==")
