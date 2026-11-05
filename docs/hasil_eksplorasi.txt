@@ -1,0 +1,137 @@
+== 1. Ukuran data ==
+Jumlah baris : 758834
+Jumlah kolom : 29
+
+== 2. Tipe tiap kolom ==
+root
+ |-- State Code: integer (nullable = true)
+ |-- County Code: integer (nullable = true)
+ |-- Site Num: integer (nullable = true)
+ |-- Parameter Code: integer (nullable = true)
+ |-- POC: integer (nullable = true)
+ |-- Latitude: double (nullable = true)
+ |-- Longitude: double (nullable = true)
+ |-- Datum: string (nullable = true)
+ |-- Parameter Name: string (nullable = true)
+ |-- Sample Duration: string (nullable = true)
+ |-- Pollutant Standard: string (nullable = true)
+ |-- Date Local: date (nullable = true)
+ |-- Units of Measure: string (nullable = true)
+ |-- Event Type: string (nullable = true)
+ |-- Observation Count: integer (nullable = true)
+ |-- Observation Percent: double (nullable = true)
+ |-- Arithmetic Mean: double (nullable = true)
+ |-- 1st Max Value: double (nullable = true)
+ |-- 1st Max Hour: integer (nullable = true)
+ |-- AQI: integer (nullable = true)
+ |-- Method Code: integer (nullable = true)
+ |-- Method Name: string (nullable = true)
+ |-- Local Site Name: string (nullable = true)
+ |-- Address: string (nullable = true)
+ |-- State Name: string (nullable = true)
+ |-- County Name: string (nullable = true)
+ |-- City Name: string (nullable = true)
+ |-- CBSA Name: string (nullable = true)
+ |-- Date of Last Change: date (nullable = true)
+
+
+== 3. Jumlah nilai kosong per kolom ==
+-RECORD 0---------------------
+ State Code          | 0      
+ County Code         | 0      
+ Site Num            | 0      
+ Parameter Code      | 0      
+ POC                 | 0      
+ Latitude            | 0      
+ Longitude           | 0      
+ Datum               | 0      
+ Parameter Name      | 0      
+ Sample Duration     | 0      
+ Pollutant Standard  | 351743 
+ Date Local          | 0      
+ Units of Measure    | 0      
+ Event Type          | 0      
+ Observation Count   | 0      
+ Observation Percent | 0      
+ Arithmetic Mean     | 0      
+ 1st Max Value       | 0      
+ 1st Max Hour        | 0      
+ AQI                 | 351743 
+ Method Code         | 0      
+ Method Name         | 0      
+ Local Site Name     | 21829  
+ Address             | 0      
+ State Name          | 0      
+ County Name         | 0      
+ City Name           | 0      
+ CBSA Name           | 60113  
+ Date of Last Change | 0      
+
+
+== 4. Perkiraan jumlah nilai berbeda per kolom ==
+-RECORD 0--------------------
+ State Code          | 53    
+ County Code         | 125   
+ Site Num            | 289   
+ Parameter Code      | 1     
+ POC                 | 12    
+ Latitude            | 1049  
+ Longitude           | 1106  
+ Datum               | 2     
+ Parameter Name      | 1     
+ Sample Duration     | 3     
+ Pollutant Standard  | 1     
+ Date Local          | 353   
+ Units of Measure    | 1     
+ Event Type          | 3     
+ Observation Count   | 25    
+ Observation Percent | 25    
+ Arithmetic Mean     | 20666 
+ 1st Max Value       | 1894  
+ 1st Max Hour        | 25    
+ AQI                 | 250   
+ Method Code         | 21    
+ Method Name         | 22    
+ Local Site Name     | 997   
+ Address             | 944   
+ State Name          | 53    
+ County Name         | 532   
+ City Name           | 690   
+ CBSA Name           | 377   
+ Date of Last Change | 124   
+
+
+== 5. Rentang tanggal ==
++---------------+---------------+
+|min(Date Local)|max(Date Local)|
++---------------+---------------+
+|     2025-01-01|     2025-12-31|
++---------------+---------------+
+
+== 6. Sebaran wilayah ==
+Jumlah stasiun       : 1044
+Jumlah negara bagian : 53
+
+== 7. Satuan PM2.5 ==
++---------------------------+
+|Units of Measure           |
++---------------------------+
+|Micrograms/cubic meter (LC)|
++---------------------------+
+
+== 8. Statistik kadar PM2.5 (Arithmetic Mean) ==
++-------+-----------------+
+|summary|  Arithmetic Mean|
++-------+-----------------+
+|  count|           758834|
+|   mean|7.311878475609994|
+| stddev|6.065394055616616|
+|    min|        -5.733333|
+|    max|          427.975|
++-------+-----------------+
+
+Jumlah nilai minus: 3208
+
+== 9. Baris ganda ==
+Kombinasi stasiun+tanggal yang muncul >1 kali: 323861
+Baris yang benar-benar identik (kelebihan): 0

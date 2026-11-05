@@ -1,0 +1,6 @@
+data/raw/
+venv-bigdata/
+__pycache__/
+*.zip
+*.csv
+!data/sample/*.csv
