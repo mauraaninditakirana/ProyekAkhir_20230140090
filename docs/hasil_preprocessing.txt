@@ -1,0 +1,21 @@
+[0] Data mentah dari HDFS: 758,834 baris
+[1] 1. Pilih 12 kolom dari 29: 758,834 baris
+[2] 2. Buang baris dengan nilai kosong: 758,834 baris
+[3] 3. Hapus baris identik: 743,128 baris
+[4] 4. Buang Observation Percent < 75.0: 738,776 baris
+[5] 5. Buang kadar PM2.5 negatif: 735,754 baris
+
+Sebaran Event Type (nilai ekstrem tidak dibuang):
++----------+------+
+|Event Type|count |
++----------+------+
+|None      |702300|
+|Included  |33261 |
+|Excluded  |193   |
++----------+------+
+
+[6] 6. Hapus pengukuran ganda (stasiun+alat+tanggal+nilai): 734,365 baris
+[7] 7. Ratakan per stasiun per hari: 335,352 baris
+[8] 8. Tambah fitur bulan dan hari pada tahun: 335,352 baris
+
+Tersimpan di HDFS: hdfs://localhost:9000/proyek_akhir/pm25/clean/pm25_clean.parquet
