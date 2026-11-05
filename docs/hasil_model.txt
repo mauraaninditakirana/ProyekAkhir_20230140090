@@ -1,0 +1,17 @@
+Data latih: 268,736 baris | Data uji: 66,616 baris
+
+== Evaluasi pada data uji ==
+RMSE : 4.716
+MAE  : 2.828
+R2   : 0.331
+Pembanding (selalu menebak rata-rata latih = 7.299): RMSE 5.764
+
+== Pentingnya tiap fitur ==
+day_of_year  0.357
+state_idx    0.248
+latitude     0.144
+month        0.127
+longitude    0.124
+
+Model tersimpan di HDFS: hdfs://localhost:9000/proyek_akhir/pm25/model/rf_pm25
+Data dashboard: data/dashboard/pm25_prediksi.csv (66,616 baris)
