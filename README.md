@@ -39,7 +39,7 @@ pada skrip yang membaca dan menulis ke HDFS.
 3. **Pemodelan, evaluasi, dan ekspor.** Jalankan:
 
    ```bash
-   spark-submit code/04_modeling.py
+   spark-submit --driver-memory 4g code/04_modeling.py
    ```
 
    Skrip membagi data secara acak dengan rasio 80:20 dan seed 42, melatih
